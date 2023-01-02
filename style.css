@@ -1,0 +1,547 @@
+:root {
+    --primary: #51dd00;
+    --secundary: #888a8b;
+    --text-color: #FFF;
+    --text-secundary: #000;
+    --text-tertiary: #353333;
+}
+
+
+* {
+    font-family: "montserrat";
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Event Form */
+#event-description {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/hrz-7.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:var(--text-color);
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+    color: var(--primary);
+}
+
+#disclaimer h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+#disclaimer .about-event{
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em; 
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+    
+}
+
+#disclaimer .event-date {
+    font-weight: bold;
+}
+
+#subscription-form {
+    background-color:var(--secundary);
+    padding: 2em;
+    max-width: 26%;
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color:var(--text-secundary);
+    margin-bottom: 1em;
+}
+
+.about-event {
+    animation: fadeInDown;
+    animation-duration: 2.5s;
+}
+
+.event-date {
+    animation: fadeInDown;
+    animation-duration: 2.8s;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label {
+    color:var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/*benefit section*/
+#key-benefits h2 {
+    background-color: var(--secundary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*
+.benefits {
+    animation: fadeInRight;
+    animation-duration: 5.5s;
+    --animate-repeat: 5;   
+}
+*/ 
+
+.benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25%;  
+}
+
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#benefit-1 {
+    background-image: url(../img/sqr-1.jpg);
+}
+
+#benefit-2 {
+    background-image: url(../img/sqr-2.jpg);
+}
+
+#benefit-3 {
+    background-image: url(../img/sqr-3.jpg);
+}
+
+
+
+
+/*event location */
+#location {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+    url("../img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+    
+}
+
+#adress, 
+#about-location {
+    max-width:30%;
+}
+
+#adress {
+    display:flex;
+}
+
+#adress i {
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+#adress-detail {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-location p {
+    line-height: 1.5em;
+}
+
+/* Event details container */
+#details {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detail img {
+    width: 50%;
+}
+
+.detail h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--text-tertiary);
+}
+
+#detail-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.detail-description {
+    width: 100%;
+    padding-left: 2em;
+    
+}
+
+.detail-description ul {
+    list-style-position: inside;
+}
+
+.detail-description ul li {
+    margin-bottom: 0.4em;
+}
+
+.detail-description ul li:last-child {
+    font-weight: bold;
+}
+
+/*animação do título 1 */
+.detail-description {
+    animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 7s; /* don't forget to set a duration! */
+}
+
+.detail-description {
+    --animate-repeat: 3;
+}
+
+/* Call to Action Section */
+#cta {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+    url("../img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color) 
+}
+
+#cta h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#cta .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+
+#subscription-form {
+    --animate-repeat: 3;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    color: var(--text-tertiary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+/* Mobile 450 px*/
+@media (max-width:555px) {
+    .btn {
+        opacity: 1;
+    }
+    /* Event Form */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+
+    }
+
+    #disclaimer h2 {
+        margin-bottom: 0.5em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /* Benefits Section */
+    .benefits {
+       flex-direction:column;
+       align-items: center;
+       width:auto;
+       padding:2em;
+    }
+
+    .benefit {
+        width: 100%;
+        margin-bottom: 2em;
+
+    }
+
+    /* Event Location */
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #adress {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3 {
+        margin-bottom: 0;
+        
+    }
+
+    #about-location p {
+        display: none;
+    }
+
+    /*Event details Container */
+    .detail {
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap:0;    
+    }
+
+    .detail img {
+        width:100%;
+        margin: 2em 0;
+    }
+
+    #detail-1 img {
+        display: none;
+        
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order:2;
+    }
+
+    #detail-3 .detail-description {
+        order:1;
+    }
+
+    /*call to action section */
+    #cta{
+        text-align: center;
+    }
+    
+    #cta .btn {
+        width: 80%;
+    }
+    
+}
+
+/* Mobile acima de 556 px*/
+@media (min-width:556px) and (max-width:885px) {
+    /* Event Form */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+
+    }
+
+    #disclaimer h2 {
+        margin-bottom: 0.5em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /* Benefits Section acima de 556 px */
+    .benefits {
+        flex-direction:column;
+        align-items: center;
+        width:auto;
+        padding:2em;
+     }
+ 
+     .benefit {
+         width: 100%;
+         margin-bottom: 2em;
+     }
+
+    #benefit-2 .benefit-img {
+        width: 120%;
+        margin-bottom: 2em;
+        flex-direction: row;
+    }
+    
+    #benefit-1 .benefit-img {
+        width: 120%;
+        margin-bottom: 2em;
+        flex-direction: row;
+    }
+    
+    /* Event Location acima de 556 px*/
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #adress {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3 {
+        margin-bottom: .8em;
+        
+    }
+
+    #about-location p {
+        display: none;
+    }
+
+
+    /*Event details Container acima de 556 px*/
+    .detail {
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap:0;    
+    }
+
+    .detail img {
+        width:100%;
+        margin: 2em 0;
+    }
+
+    #detail-1 img {
+        display: none;
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order:2;
+    }
+
+    #detail-3 .detail-description {
+        order:1;
+    }
+
+    
+
+}
