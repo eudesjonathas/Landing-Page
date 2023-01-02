@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open House</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Icons Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header id="event-description">
+        <div id="disclaimer">
+            <h2>Open House</h2>
+            <p class="about-event">
+                Um Showroom cheio de elegância, design e criatividade!
+            </p>
+            <p>Data do evento</p>
+            <p class="event-date">Domingo, 28 de Agosto a partir das 14h</p>
+
+
+        </div>
+        <div id="subscription-form">
+            <p>Preencha o formulário para receber os detalhes do evento</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" placeholder="digite seu nome" />
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="digite seu melhor e-mail" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="text" name="phone" placeholder="Número de whatsapp">
+                </div>
+                <div class="form-group">
+                    <label for="interest">Principal interesse</label>
+                    <select name="interest">
+                        <option value="" disble selected>Selecione</option>
+                        <option value="">Apartamentos</option>
+                        <option value="house">Casas</option>
+                        <option value="garden">Jardins</option>
+                        <option value="other">Outros</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn" value="Quero me inscrever">
+            </form>
+        </div>
+    </header>
+    <section id="key-benefits">
+        <h2>Tendências de 2022</h2>
+        <div class="benefits animate__zoomIn">
+            <div class="benefit">
+                <div id="benefit-1" class="benefit-img"></div>
+                <p>
+                    Projetos luminotécnicos, ambientação e ergonomia para profissionais tech.
+                </p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-2" class="benefit-img"></div>
+                <p>
+                    Conforto, sustentabilidade e design
+                    para sua cozinha.
+                </p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-3" class="benefit-img"></div>
+                <p>
+                    Construa espaços clean e valorize a luz natural.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section id="location">
+        <div id="adress">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div id="adress-details">
+                <p>Shopping Park Boulervard, 1333</p>
+                <p>Santa Mônica</p>
+                <p>Abertura: 14h</p>
+            </div>
+        </div>
+        <div id="about-location">
+            <h3 class="destaque">Local de destaque</h3>
+            <p>
+                O evento será realizado em um local prestigiado pelos amantes de design de interiores, onde teremos
+                exemplos de vários ambientes, tanto internos quanto externos.
+            </p>
+        </div>
+    </section>
+    <section id="details">
+        <div class="detail" id="detail-1">
+            <img src="img/hrz-3.jpg" alt="Sala ampla decorada em tons claros">
+            <div class="detail-description">
+                <h3>Conheça os ambientes que você vai aprender a decorar</h3>
+            </div>
+        </div>
+        <div class="detail" id="detail-2">
+            <div class="detail-description">
+                <h3>Detalhes</h3>
+                <ul>
+                    <li>Minimalismo</li>
+                    <li>Aproveitamento de espaço</li>
+                    <li>Psicologia das cores</li>
+                    <li>Tendências</li>
+                    <li>E muito mais...</li>
+                </ul>
+            </div>
+            <img src="img/hrz-4.jpg" alt="Sala de jantar decorada">
+        </div>
+        <div class="detail" id="detail-3">
+            <img src="img/hrz-5.1.jpg" alt="living decorado tons escuros">
+            <div class="detail-description">
+                <h3>Detalhes</h3>
+                <ul>
+                    <li>Móveis e planejados</li>
+                    <li>Ambientes funcionais</li>
+                    <li>Contexto pós pandêmico</li>
+                    <li>Plantas ornamentais</li>
+                    <li>Casas inteligentes</li>
+                    <li>E muito mais...</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="cta">
+        <h3>Gostou? Então se inscreva!</h3>
+        <button class="btn">Solicitar inscrição</button>
+    </section>
+    <footer id="footer">
+        <h3>Open House</h3>
+        <p>Onde a arquitetura, decoração e design se encontram</p>
+        <p><span>Contato: </span>Acessoria@openhouse.com.br</p>
+        <p><span>Telefone: </span>(55)9000-7771</p>
+    </footer>
+</body>
+
+</html>
